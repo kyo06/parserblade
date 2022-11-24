@@ -41,15 +41,15 @@ Parser.prototype.valid = function stringify (data, options) {
 /**
  * Parser.prototype.pipeStringify - Exposes the pipeStringify() method from strategy. Streams data through stringify
  */
-Parser.prototype.pipeStringify = function pipeStringify () {
-  return this.strategy.pipeStringify()
+Parser.prototype.pipeStringify = function pipeStringify (options = {}) {
+  return this.strategy.pipeStringify(options)
 }
 
 /**
  * Parser.prototype.pipeParse - Exposes the pipeParse() method from strategy. Streams data through parse
  */
-Parser.prototype.pipeParse = function pipeParse () {
-  return this.strategy.pipeParse()
+Parser.prototype.pipeParse = function pipeParse (options = {}) {
+  return this.strategy.pipeParse(options)
 }
 
 Parser.prototype.get = function get (data, path) {}
