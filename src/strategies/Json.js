@@ -1,6 +1,6 @@
 const Base = require('./Base')
 const ParserError = require('../errors/ParserError')
-const JSONStream = require('JSONStream')
+const JSONStream = require('jsonstream2')
 
 /**
  * Json - Support for JSON filetype
