@@ -74,10 +74,10 @@
   },
   "scripts": {
     "test": "jest --no-cache",
-    "tdd": "./node_modules/.bin/jest --watch --no-cache",
-    "docs": "./node_modules/.bin/esdoc",
-    "lint": "./node_modules/.bin/eslint",
-    "publish-docs": "./node_modules/.bin/esdoc && git subtree push --prefix docs origin gh-pages",
+    "tdd": "jest --watch --no-cache",
+    "docs": "esdoc",
+    "lint": "eslint",
+    "publish-docs": "esdoc && git subtree push --prefix docs origin gh-pages",
     "tarfile": "tar -czvf parserblade.tar.gz LICENSE package* README.md src"
   },
   "repository": "git@github.com:onhernandes/parserblade.git",
@@ -86,9 +86,9 @@
   },
   "license": "MIT",
   "dependencies": {
-    "csv-parse": "^5.3.3",
-    "csv-stringify": "^6.2.3",
-    "js-yaml": "^4.1.0",
+    "csv-parse": "^4.16.3",
+    "csv-stringify": "^5.6.5",
+    "js-yaml": "^3.14.1",
     "jsonstream2": "^3.0.0",
     "node-xml-stream": "^1.0.2",
     "xml-js": "^1.6.11"
